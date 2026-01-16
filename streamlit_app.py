@@ -87,3 +87,11 @@ X_scaled = scaler.transform(X_input)
 if predictbutton:
     prediction = model.predict(X_scaled)[0]
     st.success(f"⭐ Predicted Restaurant Rating: **{prediction:.2f}**")
+    # --------------------------------------------------
+# Prediction
+# --------------------------------------------------
+if predictbutton:
+    st.snow()
+    prediction = model.predict(X_scaled)[0]
+    st.success(f"⭐ Predicted Restaurant Rating: **{prediction:.2f}**")
+
