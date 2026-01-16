@@ -1,13 +1,6 @@
 
-from pathlib import Path
-import joblib
-
-BASE_DIR = Path(__file__).resolve().parent
-scaler_path = BASE_DIR / "Artifacts" / "scaler.pkl"
-model_path  = BASE_DIR / "Artifacts" / "restaurant_rating_predictor_model.pkl"  # adjust name
-
-scaler = joblib.load(scaler_path)
-model  = joblib.load(model_path)
+import streamlit as st
+st.write("Scaler exists?", scaler_path.exists(), scaler_path)
 
 
 import streamlit as st
