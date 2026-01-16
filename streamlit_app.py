@@ -92,6 +92,4 @@ if predictbutton:
 # --------------------------------------------------
 if predictbutton:
     st.snow()
-    prediction = model.predict(X_scaled)[0]
-    st.success(f"⭐ Predicted Restaurant Rating: **{prediction:.2f}**")
 
