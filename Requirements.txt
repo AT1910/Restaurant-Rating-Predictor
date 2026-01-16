@@ -10,6 +10,7 @@ seaborn → statistical visuals
 
 Machine Learning
 
+streamlit
 scikit-learn → models, scaling, train-test split, metrics
 joblib → having & loading .pkl model files
 
