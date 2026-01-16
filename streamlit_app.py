@@ -4,17 +4,25 @@ import joblib
 
 scaler = joblib.load('scaler.pkl')
 
+st.set_page_config(
+    layout="wide",
+    page_title="Restaurant Rating Predictor",
+    page_icon="🍴",
+)
+
+BASE_DIR = Path(__file__).resolve().parent
+ARTIFACTS_DIR = BASE_DIR / "Artifacts"
+
+scaler = joblib.load(ARTIFACTS_DIR / "scaler.pkl")
+model = joblib.load(ARTIFACTS_DIR / "restaurant_rating_predictor_model.pkl")
+
+
 st.title("Restaurant Rating Predictor")
 
 st.set_page_config(layout="wide")
 st.set_page_config(page_title="Restaurant Rating Predictor", page_icon=":fork_and_knife:")
 st.caption("Predicting Restaurant Ratings based on various features using Machine Learning")
 st.divider()
-BASE_DIR = Path(__file__).resolve().parent
-ARTIFACTS_DIR = BASE_DIR / "Artifacts"
-
-scaler = joblib.load(ARTIFACTS_DIR / "scaler.pkl")
-model = joblib.load(ARTIFACTS_DIR / "restaurant_rating_predictor_model.pkl")
 
 averagecost = st.number_input("Please enter the estimated average cost for 2:", min_value=50, max_value=99999, value=1000, step=200)
 tablebooking = st.selectbox("Does the restaurant accept table bookings?", ("Yes", "No"))
