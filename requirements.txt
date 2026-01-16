@@ -1,50 +1,7 @@
-Core data
-
-pandas → CSV loading, dataframe operations
-numpy → arrays, numeric operations, model inputs
-
-Visualization
-
-matplotlib → plots in EDA
-seaborn → statistical visuals
-
-Machine Learning
-
-streamlit
-scikit-learn → models, scaling, train-test split, metrics
-joblib → having & loading .pkl model files
 streamlit==1.53.0
-numpy==2.4.1
-pandas==2.3.3
+numpy==1.26.4
+pandas==2.2.3
 joblib==1.4.2
-scikit-learn==1.5.2
-
-App framework
-streamlit → web UI
-
-Jupyter support
-Jupyter → ensures notebooks open on GitHub / Binder
-ipykernel → required for notebook kernels
-
-------------------------------------------------------------------------------
-# Core data handling
-pandas>=1.5.0
-numpy>=1.23.0
-
-# Visualization (used in notebook)
-matplotlib>=3.6.0
-seaborn>=0.12.0
-
-# Machine Learning
-streamlit==1.53.0
-numpy==2.4.1
-pandas==2.3.3
-joblib==1.4.2
-scikit-learn==1.5.2
-
-# App framework
-streamlit>=1.25.0
-
-# Jupyter environment (for notebooks on GitHub)
-jupyter>=1.0.0
-ipykernel>=6.0.0
+scikit-learn==1.4.2
+matplotlib==3.8.4
+seaborn==0.13.2
