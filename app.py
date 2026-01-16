@@ -1,6 +1,5 @@
 import streamlit as st
 import numpy as np 
-from sklearn.preprocessing import StandardScaler
 import joblib
 
 scaler = joblib.load('scaler.pkl')
