@@ -1,6 +1,9 @@
 # Restaurant Rating Predictor (Streamlit + Scikit-Learn)
 
-This is an end-to-end machine learning project that trains a model to predict a restaurant's **Aggregate rating** using a small set of business-friendly features (cost, price range, and whether it supports delivery or table booking). The trained model is then served through a **Streamlit** web app.
+https://restaurant-rating-predictor-6cvrd5qzrg7xwterz5jfmv.streamlit.app/
+
+
+This is an end-to-end machine learning project that trains a model to predict a restaurant's **Aggregate rating** using a small set of business-friendly features (cost, price range, and whether it supports delivery or table booking). The trained model is then servedthrough a **Streamlit** web app.
 
 > Note on authorship: I built this as a learning project following a tutorial, and then cleaned it up for reproducibility, GitHub readiness, and clearer documentation.
 
