@@ -51,7 +51,7 @@ High-level pipeline:
 
 ---
 
-## Repo structure (recommended)
+## Repo structure
 
 ```
 .
@@ -65,59 +65,3 @@ High-level pipeline:
 │   └── scaler.pkl
 ├── requirements.txt
 └── README.md
-```
-
-Why this structure:
-- GitHub users can run the notebook without editing local file paths.
-- Streamlit can reliably find model artifacts in `artifacts/`.
-
----
-
-## How to run
-
-### 1) Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 2) Train and export artifacts
-
-Open the notebook and run all cells. Make sure it writes:
-- `artifacts/restaurant_rating_predictor_model.pkl`
-- `artifacts/scaler.pkl`
-
-### 3) Run the Streamlit app
-
-```bash
-streamlit run app.py
-```
-
----
-
-## Common GitHub notebook issue (and the fix)
-
-If your notebook uses a local path like:
-
-```python
-df = pd.read_csv('/Users/yourname/Desktop/.../Dataset.csv')
-```
-
-It will break for anyone else (and often when rendered on GitHub). Replace it with a repo-relative path:
-
-```python
-from pathlib import Path
-DATA_PATH = Path('data') / 'Dataset.csv'
-df = pd.read_csv(DATA_PATH)
-```
-
----
-
-## Next improvements
-
-If you want this to look more "real" than a tutorial project, these are high-signal upgrades:
-- Add proper evaluation (RMSE/MAE) and cross-validation reporting
-- Add feature importance (if using a tree model)
-- Add input validation + realistic bounds by city/country
-- Package training into a script (`train.py`) so artifacts can be rebuilt without a notebook
-
