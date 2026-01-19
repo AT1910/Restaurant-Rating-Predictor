@@ -9,7 +9,7 @@ This is an end-to-end machine learning project that trains a model to predict a 
 
 ---
 
-## What the app does
+## What does the App do:
 
 You input:
 - **Average Cost for two**
